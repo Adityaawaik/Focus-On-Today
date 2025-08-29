@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focus on Today</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <h1 class="focus">Focus</h1>
+        <h1 class="on">on</h1>
+        <h1 class="today">Today</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="mainContent">
+        <div class="heading">
+          <h1 class="todayEvent">
+            Today
+            <i id="sun" class="fa-solid fa-sun" style="color: #ffd43b"></i>
+            <i id="moon" class="fa-solid fa-moon"></i>
+          </h1>
+          <div class="date"></div>
+        </div>
+
+        <div class="greetings"></div>
+
+        <div class="addTask">
+          <div class="addTaskContent">
+            Add More Task
+            <button id="addTask">+</button>
+          </div>
+        </div>
+
+        <div class="entireTask">
+          <div id="alltask">
+            <div class="tasklist">
+              <div class="taskbar">
+                <button class="selection">
+                  <img
+                    class="tickmark"
+                    src="https://i.pinimg.com/1200x/51/4c/c0/514cc0aec0350e6b325271880ba85570.jpg"
+                    alt=""
+                  />
+                </button>
+                <input
+                  type="text"
+                  name=""
+                  class="textWritten"
+                  placeholder="Add New Goal "
+                />
+
+                <select name="" class="priorityOrder">
+                  <option value="setPriority">Priority</option>
+                  <option value="highPriority">High</option>
+                  <option value="mediumPriority">Medium</option>
+                  <option value="lowPriority">Low</option>
+                </select>
+
+                <button id="deleteBtn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="factContent">
+          <div class="facts"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js" defers></script>
+  </body>
+</html>
