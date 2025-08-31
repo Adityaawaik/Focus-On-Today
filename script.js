@@ -94,4 +94,4 @@ fetch("https://dummyjson.com/quotes")
     facts.textContent = `"${allFacts[randomIndex].quote}"`;
   });
 
-const setPriority = document.querySelector("#priorityOrder");
+
